@@ -375,3 +375,91 @@ My journey from Backend to AI Infra Engineer.
 - [vllm-project/guidellm: Evaluate and Enhance Your LLM Deployments for Real-World Inference Needs - GitHub](https://github.com/vllm-project/guidellm)
 - [Top 5 AI/ML Infrastructure Engineer Interview Questions - Interviews Chat](https://www.interviews.chat/questions/aiml-infrastructure-engineer)
 - [How to Design a GPU Cluster for AI Training - The Deep Learning System Design Interview - YouTube](https://www.youtube.com/watch?v=o9xAU7KWbvI)
+
+---
+
+## 项目结构
+
+本仓库的目录结构按照上述培养方案进行组织，便于系统性学习和进度追踪。
+
+```
+ai-infra-engineering-tutorial-2026/
+├── courses/                           # 五大核心课程
+│   ├── SYS-601-gpu-architecture/      # GPU 架构与算子优化
+│   │   ├── readings/                  # 论文与博客
+│   │   ├── notes/                     # 学习笔记
+│   │   ├── code/                      # 代码实现
+│   │   └── labs/                      # 实验练习
+│   ├── SYS-602-distributed-training/  # 分布式训练与混合并行
+│   │   ├── readings/
+│   │   ├── notes/
+│   │   ├── code/
+│   │   └── labs/
+│   ├── SYS-603-networking/            # 高性能 AI 网络与集合通信
+│   │   ├── readings/
+│   │   ├── notes/
+│   │   ├── code/
+│   │   └── labs/
+│   ├── SYS-604-inference/             # 高吞吐 LLM 推理系统
+│   │   ├── readings/
+│   │   ├── notes/
+│   │   ├── code/
+│   │   └── labs/
+│   └── SYS-605-cluster-scheduling/    # 大规模集群调度与容错
+│       ├── readings/
+│       ├── notes/
+│       ├── code/
+│       └── labs/
+├── interview-prep/                    # 七轮面试准备
+│   ├── round-1-systems-coding/        # 底层系统编程
+│   ├── round-2-gpu-kernel/            # GPU 架构与 Kernel 设计
+│   ├── round-3-distributed-training/  # 分布式训练架构
+│   ├── round-4-networking/            # 高性能网络
+│   ├── round-5-inference/             # 高吞吐推理系统
+│   ├── round-6-resilience/            # 弹性与调度
+│   └── round-7-capstone/              # 终极系统设计
+├── projects/                          # 实战项目（Portfolio）
+│   ├── triton-kernels/                # Triton 算子实现
+│   ├── megatron-experiments/          # Megatron-LM 实验
+│   ├── nccl-analysis/                 # NCCL 通信分析
+│   ├── vllm-exploration/              # vLLM 推理探索
+│   └── cluster-simulation/            # 集群调度模拟
+└── resources/                         # 学习资源
+    ├── papers/                        # 论文 PDF
+    ├── blogs/                         # 博客存档
+    ├── tools/                         # 工具脚本
+    └── datasets/                      # 测试数据集
+```
+
+### 学习路径时间轴
+
+```
+ Month 1-3    │ Month 4-7           │ Month 8-10   │ Month 11-12
+──────────────┼─────────────────────┼──────────────┼────────────
+   SYS-601    │ SYS-602 + SYS-603   │   SYS-604    │   SYS-605
+ GPU/CUDA     │ Distributed + Net   │  Inference   │  Scheduling
+   (Serial)   │    (Parallel)       │   (Serial)   │   (Serial)
+```
+
+### 快速开始
+
+```bash
+# 克隆仓库
+git clone https://github.com/yourusername/ai-infra-engineering-tutorial-2026.git
+cd ai-infra-engineering-tutorial-2026
+
+# 从 SYS-601 开始学习
+cd courses/SYS-601-gpu-architecture
+cat README.md
+
+# 阅读课程大纲，按照 Progress Tracking 表格推进学习
+```
+
+### 进度追踪
+
+每门课程的 README.md 中包含详细的：
+- **Learning Objectives** - 可勾选的学习目标
+- **Required Reading** - 可勾选的必读材料
+- **Progress Tracking** - 周级别的学习进度表
+
+建议使用 GitHub Issues 或 Projects 功能进行个人进度管理。
